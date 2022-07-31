@@ -11,7 +11,7 @@ end
 
 Numo.gnuplot do
   reset
-  set term: "png", size:[800, 800]
+  set term: "png", size:[600, 600]
   set out: "recurrence_plot_rb.png"
   set xrange: 0..1000
   set yrange: 1000..0
