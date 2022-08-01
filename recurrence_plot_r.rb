@@ -17,6 +17,8 @@ Numo.gnuplot do
   set yrange: 1000..0
   set title: "sine wave"
   set size: :square
+  set palette_defined:'(0"#440154",1"#472c7a",2"#3b518b",3"#2c718e",4"#21908d",5"#27ad81",6"#5cc863",7"#aadc32",8"#fde725")'
+  unset :colorbox
   
   sin_m = Numo::NMath.sin(Numo::DFloat.linspace(0, 6*Math::PI, 1000))
   dist_m = recurrence_plot(sin_m, 0.1, 10)
