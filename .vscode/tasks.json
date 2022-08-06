@@ -7,6 +7,10 @@
       "label": "exec ruby",
       "type": "shell",
       "command": "ruby ${file}",
+      "group": {
+				"kind": "build",
+				"isDefault": true
+			},
       "problemMatcher": [],
       "presentation": {
         "echo": true,
@@ -21,6 +25,10 @@
       "label": "exec python",
       "type": "shell",
       "command": "py ${file}",
+      "group": {
+				"kind": "build",
+				"isDefault": true
+			},
       "problemMatcher": [],
       "presentation": {
         "echo": true,
